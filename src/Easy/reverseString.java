@@ -33,3 +33,24 @@ public class reverseString {
         System.out.println("Reversed: " + Arrays.toString(s2));
     }
 }
+
+// reverse the string using recursion
+public void reverseString(char[] s) {
+    helper(s, 0, s.length-1); //initially the recursion start and end
+}
+
+//helper function
+public void helper(char[] s, int start, int end) {
+
+    //base case
+    if(start>=end) {
+        return;
+    }
+
+// swap the values
+char temp = s[start];
+s[start] = s[end];
+s[end] = temp;
+
+helper(s, start+1, end-1);
+}
