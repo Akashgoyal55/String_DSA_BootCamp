@@ -40,7 +40,7 @@ public void reverseString(char[] s) {
 }
 
 //helper function
-public void helper(char[] s, int start, int end) {
+public void helper(char[] s, int start , int end) {
 
     //base case
     if(start>=end) {
