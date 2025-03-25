@@ -2,7 +2,7 @@ package Easy;
 
 public class palindromeCheck {
     public static boolean isPalindrome(String s){
-        
+
         s = s.toLowerCase();
         //using two pointers technique
         int start = 0;
