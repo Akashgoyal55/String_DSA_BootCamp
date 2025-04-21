@@ -17,6 +17,7 @@ public class mostRepeatChar {
                 }
             }
 
+
             // updating max
             if (count > maxCount) {
                 maxCount = count;
